@@ -1,85 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Simon Game new bootstrap toggles</title>
+  <title>Simon Game</title>
+
+  <!-- Link font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  
+
+  <!--Link stylesheets -->
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel='stylesheet prefetch' href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="circle">
-  <div class="innerCircle">
-
-    <div class="simon">Simon
+    <div class="innerCircle">
+      <div class="simon">Simon</div>
+      <div class="buttons row">
+        <div class="col-xs-4">
+          <div class="number"> </div>
+        </div>
+        <div class="col-xs-4">
+          <button id="startButton" class="button">Start</button>
+        </div>
+        <div class="col-xs-4">
+          <div id="strict-toggle">
+            <input id="strict-toggle2" type="checkbox" data-toggle="toggle" data-on="Strict" data-off="Strict Off" data-size="mini">
+          </div>
+        </div>
+      </div><!--End buttons row-->
+      <div class="wrapper">
+        <input id="power" class="power" type="checkbox" data-toggle="toggle">
+      </div>
     </div>
-    <div class="buttons row">
-      <div class="col-xs-4">
-        <div class="number"> </div>
+
+    <div class="top">
+      <div id="green" class="upperLeft colors">
       </div>
-      <div class="col-xs-4">
-        <button id="startButton" class="button">Start</button>
+      <div id="yellow" class="bottomLeft colors">
       </div>
-      <div class="col-xs-4">
-        <div id="strict-toggle">
-          <input id="strict-toggle2" type="checkbox" data-toggle="toggle" data-on="Strict" data-off="Strict Off" data-size="mini">
+    </div>
+    <div class="bottom">
+      <div id="red" class="upperRight colors">
+      </div>
+      <div id="blue" class="bottomRight colors">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">You win!</h4>
+        </div>
+        <div class="modal-body">
+          You passed level 20!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Restart Game</button>
+
         </div>
       </div>
     </div>
+  </div><!--End modal-->
 
-
-    <div class="wrapper">
-      <input id="power" class="power" type="checkbox" data-toggle="toggle">
-
-    </div>
-
-
-  </div>
-
-  <div class="top">
-    <div id="green" class="upperLeft colors">
-    </div>
-    <div id="yellow" class="bottomLeft colors">
-    </div>
-  </div>
-  <div class="bottom">
-    <div id="red" class="upperRight colors">
-    </div>
-    <div id="blue" class="bottomRight colors">
-    </div>
-
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">You win!</h4>
-      </div>
-      <div class="modal-body">
-        You passed level 20!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Restart Game</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- add in scripts -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js'></script>
-
-    <script  src="js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js'></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
