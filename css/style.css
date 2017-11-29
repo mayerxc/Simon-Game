@@ -1,0 +1,220 @@
+.circle {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+    display: flex;
+}
+
+.innerCircle {
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+    top: 25%;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    z-index: 10;
+    box-shadow: 0px 0px 100px black;
+}
+
+.upperLeft {
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 100%;
+    background: radial-gradient(lightgreen, green);
+    box-shadow: 0px 0px 100px black;
+}
+.upperLeft.active:active {
+    background: #bdf5bd!important;
+}
+
+.upperRight {
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 100%;
+    background: radial-gradient(red, firebrick);
+    box-shadow: 0px 0px 100px black;
+}
+
+.upperRight.active:active{
+    background:red;
+    background:#ffb3b3!important;
+}
+
+.bottomLeft {
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 100%;
+    background: radial-gradient(LightGoldenRodYellow, yellow);
+    background: radial-gradient(yellow, darkgoldenrod);
+    box-shadow: 0px 0px 100px black;
+}
+
+.bottomLeft.active:active{
+    background: yellow;
+    background: LightGoldenRodYellow!important;
+}
+
+.bottomRight {
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    width: 250px;
+    height: 250px;
+    border-bottom-right-radius: 100%;
+    background: radial-gradient(royalblue, midnightblue);
+    box-shadow: 0px 0px 100px black;
+}
+
+.bottomRight.active:active{
+    background:royalblue;
+    background: #91a8ee!important;
+}
+
+.mySpan {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.simon {
+    position: relative;
+    top: 10%;
+    z-index: 11;
+    font-size: 300%
+}
+
+.buttons {
+    position: inherit;
+    top:50%;
+    transform: translateY(-50%);
+    height: 85px;
+    width:260px;
+    /* border: 2px solid black; */
+}
+
+button {
+    position: relative;
+    vertical-align: middle;
+}
+
+.wrapper {
+    position: relative;
+    display: table;
+    margin: auto;
+    top: 48%;
+}
+
+.number {
+    position: relative;
+    top:50%;
+    left:7px;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 40px;
+    height:40px;
+    width: auto;
+    border: 2px solid black;
+    z-index: 11;
+    background:#3d3d29;
+    border-radius:11px;
+    color:crimson;
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px
+}
+#strict-toggle {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  left:-15px;
+}
+
+
+.strict{
+    position: relative;
+    top:45%;
+    transform: translateY(-50%);
+    left:0%;
+    height: 30px;
+    width:30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.strictInner{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 50%
+}
+.strictWords{
+    position: relative;
+    top:40%;
+    transform:translateY(-50%);
+    left:-14px;
+    
+}
+
+.button {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    font: bold 12px Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: 0.3em 1em 0.4em 1em;
+    border-radius: 0.3em;
+    border: 1px solid;
+    border-color: #bbbbbb #a2a2a2 #888888;
+    background-color: #eee;
+    background-size: 100%;
+    background-image: linear-gradient(#eeeeee, #d5d5d5);
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+    transition: all 100ms;
+}
+
+.button:hover {
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.4), 0 0.1em 0.2em rgba(0, 0, 0, 0.4), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+}
+
+.button:active {
+    padding: 0.3em 1em 0.4em 1em;
+    margin-top: 0.1em;
+    border-color: #a2a2a2 #bbbbbb #eee;
+    background-size: 100%;
+    background-image: linear-gradient(#e1e1e1, #eeeeee);
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1) inset, 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset, 0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset, -0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset;
+    transition: all 10ms;
+}
+
+.col-xs-4 {
+    height: 100%;
+}
